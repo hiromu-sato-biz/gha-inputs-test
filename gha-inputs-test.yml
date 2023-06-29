@@ -1,0 +1,33 @@
+name: inputs test
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        type: string
+        required: true
+        description: 'Text data'
+      optional:
+        type: string
+        required: false
+        description: 'Optional data'
+      secret:
+        type: string
+        required: true
+        description: 'Secret data'
+      flag:
+        type: boolean 
+        required: true 
+        description: 'Flag data'
+
+jobs:
+  inputs-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ inputs.sha }}
+
+      - uses: ./.github/workflows/called.yml@main
+        with:
+          inputs: ${{ github.event.inputs )}}
