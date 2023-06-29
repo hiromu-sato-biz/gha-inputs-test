@@ -30,4 +30,4 @@ jobs:
 
       - uses: ./.github/workflows/show-inputs.yml@main
         with:
-          inputs: ${{ github.event.inputs )}}
+          inputs: ${{ github.event.inputs }}
