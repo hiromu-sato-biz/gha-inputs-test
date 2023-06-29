@@ -28,6 +28,6 @@ jobs:
         with:
           ref: ${{ inputs.sha }}
 
-      - uses: ./.github/workflows/called.yml@main
+      - uses: ./.github/workflows/show-inputs.yml@main
         with:
           inputs: ${{ github.event.inputs )}}
