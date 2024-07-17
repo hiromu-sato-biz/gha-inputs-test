@@ -5,6 +5,7 @@ on:
       text:
         type: string
         required: true
+        default: 'default'
         description: 'Text data'
       optional:
         type: string
