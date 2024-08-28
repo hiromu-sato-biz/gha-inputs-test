@@ -27,6 +27,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ./.github/workflows/show-inputs
+      - uses: ./.github/actions/show-inputs
         with:
           inputs: ${{ github.event.inputs }}
