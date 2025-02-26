@@ -1,1 +1,2 @@
 # gha-inputs-test
+hoge
